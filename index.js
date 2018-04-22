@@ -1,5 +1,4 @@
-
-var cart = [];
+r cart = [];
 
 function getCart() {
   return cart;}
@@ -21,10 +20,12 @@ function viewCart(){
   else {
     var str = "In your cart, you have "
     for(let i=0; i<cart.length; i++) {
-      if(i===cart.length-1 && i>0){
+      else if(i===cart.length-1 && i>0){
         str += "and " }
       else {
-        str += `${cart[i].itemName} at \$${cart[i].itemPrice}, `; }
+        str += `${cart[i].itemName} at \$${cart[i].itemPrice}`; 
+        if(i>0) {
+          str+= ", "; }
     }
     return str + ".";
   }
