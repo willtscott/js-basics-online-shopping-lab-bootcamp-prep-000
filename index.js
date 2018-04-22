@@ -1,4 +1,4 @@
-art = [];
+cart = [];
 
 function getCart() {
   return cart;}
