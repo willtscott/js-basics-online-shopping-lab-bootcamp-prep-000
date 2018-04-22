@@ -3,7 +3,7 @@ var cart = [];
 
 function getCart() {
   return cart;}
-function setCart© {
+function setCart() {
   cart = c;
   return cart;
 }
@@ -22,5 +22,6 @@ function viewCart(){
 function total() {
 
 }
+
 
 
