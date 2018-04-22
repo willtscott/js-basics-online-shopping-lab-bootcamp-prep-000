@@ -1,4 +1,5 @@
-r cart = [];
+
+var cart = [];
 
 function getCart() {
   return cart;}
