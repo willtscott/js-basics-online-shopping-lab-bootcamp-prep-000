@@ -1,4 +1,5 @@
-art = [];
+
+var cart = [];
 
 function getCart() {
   return cart;}
@@ -56,3 +57,5 @@ function placeOrder(num) {
     cart = [];
     return `Your total cost is \$${tot}, which will be charged to the card ${num}.` }
 }
+    
+
