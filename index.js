@@ -1,4 +1,4 @@
-var cart = [];
+art = [];
 
 function getCart() {
   return cart;}
@@ -48,6 +48,11 @@ function removeFromCart(name){
   return "That item is not in your cart.";
 }
 
-function placeOrder() {
-
+function placeOrder(num) {
+  if(num===undef) {
+    return "Sorry, we don't have a credit card on file for you." }
+  else {
+    var tot = total();
+    cart = [];
+    return `Your total cost is \$${tot}, which will be charged to the card ${num}.` }
 }
