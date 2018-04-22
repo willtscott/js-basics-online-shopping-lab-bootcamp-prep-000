@@ -26,7 +26,7 @@ function viewCart(){
       else {
         str += `${cart[i].itemName} at \$${cart[i].itemPrice}`; 
         if(i>0) {
-          str+= ", "; }
+          str+= ", "; }}
     }
     return str + ".";
   }
@@ -36,7 +36,3 @@ function viewCart(){
 function total() {
 
 }
-
-
-    
-
