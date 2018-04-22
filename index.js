@@ -1,3 +1,4 @@
+
 var cart = [];
 
 function getCart() {
@@ -15,7 +16,19 @@ function addToCart(name) {
 }
 
 function viewCart(){
-
+  if(cart.length<1){
+    return "Your shopping cart is empty." }
+  else {
+    var str = "In your cart, you have "
+    for(let i=0; i<cart.length; i++) {
+      if(i===cart.length-1 && i>0){
+        str += "and " }
+      else {
+        str += `${cart[i].itemName} at \$${cart[i].itemPrice}, `; }
+    }
+    return str + ".";
+  }
+    
 }
 
 function total() {
