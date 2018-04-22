@@ -1,4 +1,3 @@
-
 var cart = [];
 
 function getCart() {
@@ -50,12 +49,10 @@ function removeFromCart(name){
 }
 
 function placeOrder(num) {
-  if(num===undef) {
+  if(num===undefined) {
     return "Sorry, we don't have a credit card on file for you." }
   else {
     var tot = total();
     cart = [];
     return `Your total cost is \$${tot}, which will be charged to the card ${num}.` }
 }
-    
-
