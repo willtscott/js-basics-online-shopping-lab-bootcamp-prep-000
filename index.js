@@ -1,4 +1,3 @@
-
 var cart = [];
 
 function getCart() {
@@ -25,7 +24,7 @@ function viewCart(){
         str += "and " }
       else {
         str += `${cart[i].itemName} at \$${cart[i].itemPrice}`; 
-        if(cart.length>0) {
+        if(cart.length>1) {
           str+= ", "; }}
     }
     return str + ".";
