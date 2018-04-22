@@ -1,9 +1,8 @@
-
-var cart = [];
+art = [];
 
 function getCart() {
   return cart;}
-function setCart() {
+function setCart(c) {
   cart = c;
   return cart;
 }
@@ -22,6 +21,4 @@ function viewCart(){
 function total() {
 
 }
-
-
 
