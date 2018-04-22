@@ -25,7 +25,7 @@ function viewCart(){
         str += "and " }
       else {
         str += `${cart[i].itemName} at \$${cart[i].itemPrice}`; 
-        if(i>0) {
+        if(cart.length>0) {
           str+= ", "; }}
     }
     return str + ".";
